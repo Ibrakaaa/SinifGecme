@@ -1,0 +1,59 @@
+import java.util.Scanner;
+public class SinifGecme {
+    public static void main(String[] args) {
+
+        int mat,fizik,turkce,kimya,müzik;
+        double ortalama;
+
+
+        Scanner ders = new Scanner(System.in);
+
+        System.out.print("Lütfen Matematik Ders Notunuzu Giriniz: ");
+        mat = ders.nextInt();
+        System.out.print("Lütfen Fizik Ders Notunuzu Giriniz: ");
+        fizik = ders.nextInt();
+        System.out.print("Lütfen Türkçe Ders Notunuzu Giriniz: ");
+        turkce = ders.nextInt();
+        System.out.print("Lütfen Kimya Ders Notunuzu Giriniz: ");
+        kimya = ders.nextInt();
+        System.out.print("Lütfen Müzik Ders Notunuzu Giriniz: ");
+        müzik = ders.nextInt();
+
+        if(mat<0 || mat>100){
+            mat = 0;
+        }
+        if(turkce<0 || turkce>100){
+            turkce = 0;
+        }
+        if(müzik<0 || müzik>100){
+            müzik = 0;
+        }
+        if(kimya<0 || kimya>100){
+            kimya = 0;
+        }
+        if(fizik<0 || fizik>100){
+            fizik = 0;
+        }
+
+        ortalama = (mat+fizik+kimya+turkce+müzik)/5;
+        System.out.println("Not Ortalamanız: "+ortalama);
+
+        if(ortalama<=55){
+            System.out.print("Başarı Kriterini Sağlayamadınız ve Sınıfta Kaldınız...");
+        }else{
+            System.out.print("Tebrikler Sınıfı Başarıyla Geçtiniz.");
+        }
+        }
+
+
+
+        }
+
+
+
+
+
+
+
+
+
